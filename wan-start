@@ -1,0 +1,6 @@
+#!/bin/sh
+/usr/bin/onwanstart.sh
+sh /koolshare/scripts/ss_config.sh
+/usr/bin/plugin.sh start
+ip -6 route add 0::/0 dev ppp0
+ip -6 route add default dev ppp0 metric 1

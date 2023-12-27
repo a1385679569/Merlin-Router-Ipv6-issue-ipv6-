@@ -5,7 +5,7 @@
 键入命令
 ip -6 route add 0::/0 dev ppp0
 ip -6 route add default dev ppp0 metric 1
-回车即可。
+回车即可。但每次重新启动会失效。
 
 方法2：
-下载wan-start文件，移动至/jffs/scripts/，替换原文件。
+下载wan-start文件，移动至/jffs/scripts/，替换原文件。设置脚本命令开机启动，stateful模式可正常获取IPV6地址和网关。
